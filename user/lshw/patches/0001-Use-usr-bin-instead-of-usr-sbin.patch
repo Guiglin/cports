@@ -1,0 +1,25 @@
+From f18afc1ddfc62f358efaa0f9e2fd12ea5a2893a4 Mon Sep 17 00:00:00 2001
+From: Guilhem Baccialone <guilhem.baccialone@zaclys.net>
+Date: Sat, 18 Jan 2025 17:28:25 +0100
+Subject: [PATCH 1/1] Use usr/bin instead of usr/sbin
+
+---
+ src/Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/Makefile b/src/Makefile
+index ac726d0..9ff435a 100644
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -7,7 +7,7 @@ ZLIB?=0
+ 
+ DESTDIR?=/
+ PREFIX?=/usr
+-SBINDIR=$(PREFIX)/sbin
++SBINDIR=$(PREFIX)/bin
+ MANDIR=$(PREFIX)/share/man
+ DATADIR=$(PREFIX)/share
+ INSTALL?=install -p
+-- 
+2.48.1
+
