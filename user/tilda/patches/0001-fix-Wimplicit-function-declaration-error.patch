@@ -1,0 +1,24 @@
+From bd693301b35dd05ec69a0a6b16e990732aca1393 Mon Sep 17 00:00:00 2001
+From: Guilhem Baccialone <guilhem.baccialone@zaclys.net>
+Date: Tue, 4 Feb 2025 22:33:09 +0100
+Subject: [PATCH 1/1] fix -Wimplicit-function-declaration error
+
+---
+ src/tilda-lock-files.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/tilda-lock-files.c b/src/tilda-lock-files.c
+index f761107..9accc22 100644
+--- a/src/tilda-lock-files.c
++++ b/src/tilda-lock-files.c
+@@ -13,6 +13,7 @@
+  * License along with this library. If not, see <http://www.gnu.org/licenses/>.
+  */
+ 
++#define _DEFAULT_SOURCE
+ #include "tilda-lock-files.h"
+ 
+ #include "debug.h"
+-- 
+2.48.1
+
